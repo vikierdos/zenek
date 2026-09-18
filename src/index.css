@@ -1,0 +1,13 @@
+﻿:root {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #282431;
+  background: #f5f1e9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 240px; }
+h1, h2, p { margin: 0; }

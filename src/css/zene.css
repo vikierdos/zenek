@@ -1,0 +1,66 @@
+﻿.zene {
+  --art: #b6a3da;
+  --label: #f0ac89;
+  padding: 12px 12px 20px;
+  border: 1px solid #ded7cc;
+  border-radius: 18px;
+  background: #fffcf7;
+  box-shadow: 0 6px 0 #e8e1d6;
+  overflow-wrap: anywhere;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.zene-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--art);
+}
+
+.zene h2 {
+  min-height: 2.5em;
+  margin: 20px 6px 14px;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+}
+
+.zene p {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 6px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.zene p + p {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e5ded5;
+}
+
+.zene p span {
+  color: #716876;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .zene:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 0 #e8e1d6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zene { transition: none; }
+}

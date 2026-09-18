@@ -1,0 +1,24 @@
+﻿.zenek {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 40px 16px 56px;
+}
+
+/* Fixed-width cards move to a new row instead of getting squeezed. */
+.zenek > .zene {
+  flex: 0 0 auto;
+  width: 240px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.zenek > .zene:nth-child(4n + 2) { --art: #ed977b; --label: #ffe8a4; }
+.zenek > .zene:nth-child(4n + 3) { --art: #bfce83; --label: #e7b5db; }
+.zenek > .zene:nth-child(4n + 4) { --art: #8dbbc8; --label: #ffc6ac; }
+
+@media (max-width: 640px) {
+  .zenek { gap: 20px; padding: 28px 20px 40px; }
+}
